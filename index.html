@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans:wght@300;400;600&family=Poppins:wght@300;400;500;600;700&family=Puritan:ital@1&family=Roboto:wght@100;400;500;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- HOJA DE ESTILO -->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Waves</title>
+</head>
+<body>
+    <section>
+        <div class="wave" id="wave1" style="--i:1;"></div>
+        <div class="wave" id="wave2" style="--i:2;"></div>
+        <div class="wave" id="wave3" style="--i:3;"></div>
+        <div class="wave" id="wave4" style="--i:4;"></div>
+    </section>
+    <div class="sec">
+        <h2>Title of Project</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci quibusdam incidunt, fugiat magni pariatur ad alias provident quam ducimus. Numquam vitae et optio facere commodi. Tempora perspiciatis libero illo maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quas sint asperiores culpa quae deserunt unde ex, consectetur consequuntur eaque doloribus modi optio distinctio quibusdam, iure similique nihil nostrum excepturi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure atque libero quas dolorum dolor et, assumenda omnis deserunt quam corporis cumque suscipit ipsum delectus voluptatum sapiente! Vel consectetur soluta esse natus asperiores eveniet fugit pariatur eaque possimus quos, inventore itaque molestias iusto quae? Enim excepturi consequuntur repellat corporis hic est explicabo a, voluptatum eum. Fugit soluta quos cupiditate suscipit nostrum!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, fuga! Laboriosam autem nisi deleniti facere vitae nesciunt provident, esse ipsam sequi temporibus dolores ut molestiae iure illum dicta velit quos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi sequi autem aperiam maiores quisquam vitae, veritatis in tempora doloribus, voluptas officiis quas velit quos illo nesciunt totam explicabo odit! Iste.<br><br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam laudantium, consequuntur fuga quae recusandae provident distinctio? Quis perferendis nihil fugit similique animi? Debitis, officia aperiam? Accusamus distinctio veritatis itaque eligendi ex! Accusamus sint velit autem praesentium id culpa aperiam sed at unde perferendis minima similique sapiente dignissimos ipsa quasi voluptatum minus, illo voluptates magni, quis distinctio omnis perspiciatis. Similique, atque!<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis magni exercitationem eaque hic nam tempora saepe deleniti aspernatur, nisi expedita, architecto nostrum fugit aut quisquam consequatur aliquid, ea dolorem nemo pariatur autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo laborum, aperiam ab reprehenderit repudiandae quaerat! Eum consequatur iste, unde cum tempore aspernatur rem maiores nihil dolorem deleniti ut. Similique, aspernatur.</brr></p>
+    </div>
+
+    <script>
+        let wave1 = document.getElementById('wave1');
+        let wave2 = document.getElementById('wave2');
+        let wave3 = document.getElementById('wave3');
+        let wave4 = document.getElementById('wave4');
+        
+        window.addEventListener('scroll',function(){
+            let value = window.scrollY;
+
+            wave1.style.backgroundPositionX = 400 + value * 4 + 'px';
+            wave2.style.backgroundPositionX = 300 + value * -4 + 'px';
+            wave3.style.backgroundPositionX = 200 + value * 2 + 'px';
+            wave4.style.backgroundPositionX = 100 + value * -2 + 'px';
+        })
+
+    </script>
+</body>
+</html>
